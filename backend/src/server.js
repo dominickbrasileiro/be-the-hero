@@ -1,3 +1,8 @@
+require('dotenv').config()
+
 const app = require ('./app')
 
-app.listen(3333)
+const hostname = process.env.HOST
+const port = process.env.PORT
+
+app.listen(port, hostname, () => console.log(`Server running at http://${hostname}:${port}/`))
