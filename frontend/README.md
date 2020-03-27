@@ -4,7 +4,7 @@
 
 2. Com base no arquivo ```.env.example``` crie o arquivo ```.env``` e defina as variáveis especificadas.  
 
-3. Rode o servidor com o comando ```npm start```
+3. Rode a aplicação com o comando ```npm start```
 
 4. Obrigado!
 
