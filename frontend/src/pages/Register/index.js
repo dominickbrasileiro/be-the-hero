@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
 
+import WhatsappInput from '../../components/WhatsappInput'
+
 import api from '../../services/api'
 import './styles.css'
 
@@ -55,11 +57,11 @@ function Register() {
         <form onSubmit={handleRegister}>
           <input onChange={e => setName(e.target.value)} value={name} type="text" placeholder="Nome da ONG" />
           <input onChange={e => setEmail(e.target.value)} value={email} type="email" placeholder="E-mail" />
-          <input onChange={e => setWhatsapp(e.target.value)} value={whatsapp} type="tel" placeholder="WhatsApp"/>
+          <WhatsappInput onValueChange={value => setWhatsapp(value)} value={whatsapp} placeholder="WhatsApp" />
 
           <div className="input-group">
             <input onChange={e => setCity(e.target.value)} value={city} type="text" placeholder="Cidade" />
-            <input onChange={e => setUf(e.target.value)} value={uf} type="text" placeholder="UF" style={{ width: 80 }} />
+            <input onChange={e => setUf(e.target.value.toUpperCase())} value={uf} type="text" placeholder="UF" style={{ width: 80 }} maxLength={2} />
           </div>
 
           <button className="button" type="submit">Cadastrar</button>
