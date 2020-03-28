@@ -3,7 +3,7 @@
 ```npm install``` |
 ```yarn install```
 
-2. Com base no arquivo ```.env.example``` crie o arquivo ```.env``` e defina as variáveis especificadas.  
+2. Coloque a URL do seu servidor no arquivo ```src/services/api.js```
 
 3. Rode o projeto com o comando ```npm start```
 
