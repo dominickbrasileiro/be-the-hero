@@ -16,9 +16,10 @@ module.exports = {
         'ongs.name',
         'ongs.email',
         'ongs.whatsapp',
-	'ongs.city',
+	      'ongs.city',
         'ongs.uf'
       ])
+      .orderBy('incidents.id', 'desc')
     
     res.header('X-Total-Count', count['count(*)'])
     return res.json(incidents)
