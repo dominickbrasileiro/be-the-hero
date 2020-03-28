@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
+import NumberFormat from 'react-number-format'
 
 import api from '../../services/api'
 import './styles.css'
@@ -51,11 +52,10 @@ function NewIncident() {
             Voltar para Início
         </Link>
         </section>
-
         <form onSubmit={handleNewIncident}>
-          <input onChange={e => setTitle(e.target.value)} value={title} type="text" placeholder="Título do caso" />
-          <textarea onChange={e => setDescription(e.target.value)} value={description} placeholder="Descrição" />
-          <input onChange={e => setValue(e.target.value)} value={value} type="text" placeholder="Valor em reais" />
+          <input onChange={e => setTitle(e.target.value)} value={title} type="text" placeholder="Título do caso" maxLength={55} required />
+          <textarea onChange={e => setDescription(e.target.value)} value={description} placeholder="Descrição" maxLength={200} required />
+          <NumberFormat onValueChange={({value}) => setValue(value)} value={value} prefix="R$ " suffix=",00" thousandSeparator="." decimalSeparator="," placeholder="Valor em Reais" maxLength={25} required />
 
           <button className="button" type="submit">Cadastrar</button>
         </form>
