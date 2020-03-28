@@ -5,22 +5,22 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 24,
-    paddingTop: Constants.statusBarHeight + 20
+    paddingTop: Constants.statusBarHeight
   },
 
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center'
+    alignItems: 'center',
+    paddingVertical: 20
   },
 
   incident: {
     padding: 24,
     borderRadius: 8,
     backgroundColor: '#FFF',
-    marginTop: 48,
-    marginBottom: 16
-  },
+    marginVertical: 16
+    },
 
   incidentProperty: {
     fontSize: 14,
