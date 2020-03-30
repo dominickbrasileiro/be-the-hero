@@ -6,6 +6,8 @@
 
 3. Rode o servidor com o comando ```npm start```
 
-4. Obrigado!
+4. Rode o comando ```npx knex migrate:latest``` para criar o banco de dados
+
+5. Obrigado!
 
 ##### *Desenvolvido por Dominick Brasileiro* 💎
