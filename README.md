@@ -7,7 +7,8 @@ Proposta desenvolvida durante a Semana OmniStack 11.0 e recebendo atualizações
 ## Tecnologias utilizadas
   - Node.js/Express (backend)
   - React (frontend)
-  - React Native (mobile)
+  - Expo - React Native (mobile)
+  - SQLite
 
 ## Como rodar
 1. Clone o projeto através do git  
