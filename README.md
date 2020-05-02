@@ -1,6 +1,6 @@
 # Be the Hero!
 
-"Be the Hero" é uma proposta de aplicação com o intuito de conectar Organizações não Governamentais (ONGs) e pessoas que gostariam de ajudar financeiramente.
+"Be the Hero" é uma aplicação com o objetivo de conectar Organizações não Governamentais (ONGs) e pessoas que gostariam de ajudar financeiramente.
 
 Proposta desenvolvida durante a Semana OmniStack 11.0 e recebendo atualizações desde então.
 
